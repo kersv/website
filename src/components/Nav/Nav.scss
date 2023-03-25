@@ -1,0 +1,132 @@
+$dark-primary-color: #0a0f1e;
+$light-primary-color: #fafcfd;
+$primary-color-scheme: #9f9ae9;
+$secondary-color-scheme: #83868b;
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  height: 2.5rem;
+  align-items: center;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  
+  
+  .navLogo{
+    color: $primary-color-scheme;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: color .5s ease;
+    cursor: pointer;
+    
+    &:hover{
+      color: #8782c5;
+    }
+  }
+  
+  .nav-menu{
+    display: flex;
+    flex-direction: row;
+    
+    .nav-item{
+      list-style-type: none;
+      padding: 1rem;
+      cursor: pointer;
+      color: $primary-color-scheme;
+      font-weight: bold;
+      
+      &:hover{
+        color: #8782c5;
+      }
+    }
+    
+  }
+  
+    
+ 
+  .nav-slide-menu{
+    display: none;
+    
+    
+    .nav-item{
+      list-style-type: none;
+      padding: 1rem;
+      cursor: pointer;
+      color: $primary-color-scheme;
+      font-weight: bold;
+      
+      &:hover{
+        color: #8782c5;
+      }
+    }
+    
+  }
+  
+  
+
+  @media screen and (max-width: 700px) {
+    .nav-menu{
+      display: none;
+    }
+    
+    
+    
+    .nav-slide-menu.show{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      background-color: rgba(59, 55, 55, .9);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      overflow: none;
+      
+
+    }
+    
+  }
+  
+  .icon-stack{
+    display: flex;
+  
+    .navbar-toggle{
+      display: none;
+    }
+    
+    .icon{
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      transition: color .5s ease;
+      
+    }
+    .icon-menu{
+      margin-left: 10px;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+      color: $primary-color-scheme;
+      transition: color .5s ease;
+      
+    }
+
+    @media screen and (max-width: 700px) {
+
+      .navbar-toggle{
+        display: block;
+      }
+    
+    }
+    
+  } 
+
+}
+

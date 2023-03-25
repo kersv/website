@@ -1,0 +1,144 @@
+$dark-primary-color: #0a0f1e;
+$light-primary-color: #fafcfd;
+$primary-color-scheme: #9f9ae9;
+$secondary-color-scheme: #83868b;
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+  
+  .header{
+    // border: 1px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5em;
+    color: $primary-color-scheme;
+    // margin-top: 60px;
+    // margin-bottom: 60px;
+    flex: 1;
+  }
+
+  .content-container{
+    flex: 4;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    // border: 1px solid rgb(229, 255, 0);
+    justify-content: center;
+
+    
+    .about-me-container{
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      flex: 1;
+      
+      // border: 1px solid green;
+      .about-me{
+        // border: 1px solid rgb(253, 38, 0);
+        // width: 100%;
+        display: flex;
+        max-width: 75%;
+        // justify-content: center;
+        align-items: center;
+        // text-align: left;
+        padding: 20px;
+        transition: color 1s;
+        font-size: 1.5em;
+        font-weight: bold;
+        
+      }
+    }
+    
+    .skills-container{
+      // border: 1px solid rgb(132, 108, 197);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      flex: 1;
+      
+      
+      .skills{
+        // border: 1px solid rgb(255, 17, 0);
+        transition: color 1s;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        // width: 100%;
+        // align-items: center;
+        column-gap: 40px;
+        row-gap: 20px;
+        font-weight: bold;
+
+        .icon-img{
+          width: 5em;
+          height: 5em;
+        }
+      }
+    }
+      
+      
+  }
+  @media screen and (max-width: 700px) {
+    .header{
+      flex: 0;
+    }
+    .content-container{
+      
+      flex-direction: column;
+
+      .about-me-container{
+        flex: 3;
+
+        .about-me{
+          font-size: 1em;
+          max-width: 90%;
+        }
+      }
+
+      .skills-container{
+        flex: 1;
+        .skills{
+          grid-template-columns: 1fr 1fr 1fr;
+
+          .icon-img{
+            width: 2em;
+            height: 2em;
+          }
+        }
+      }
+    }
+    
+  }
+
+}
+
+#dark{
+  
+  .about-me{
+    color: $light-primary-color;
+  }
+  .skills{
+    color: $light-primary-color;
+  }
+}
+
+#light{
+  .about-me{
+    color: $dark-primary-color;
+  }
+  .skills{
+    color: $dark-primary-color;
+  }
+
+}

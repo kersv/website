@@ -1,0 +1,72 @@
+$dark-primary-color: #0a0f1e;
+$light-primary-color: #fafcfd;
+$primary-color-scheme: #9f9ae9;
+$secondary-color-scheme: #83868b;
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid rgb(248, 0, 0);
+  height: 100%;
+  width: 100%;
+  
+  .intro-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid white;
+    height: 100%;
+    width: 100%;
+    
+    .intro{
+      font-size: 1em;
+      font-weight: bold;
+      transition: color 1s;
+    }
+    
+    .name{
+      font-size: 3em;
+      font-weight: 500;
+      transition: color 1s;
+    }
+  
+    .job{
+      font-size: 1.5em;
+      color: $secondary-color-scheme
+    }
+  }
+
+
+
+}
+
+#dark{
+
+  .intro-desc{
+
+    .intro{
+      color: $light-primary-color; 
+    }
+    .name{
+      color: $light-primary-color; 
+    }
+  }
+
+  
+}
+
+#light{
+
+  .intro-desc{
+
+    .intro{
+      color: $dark-primary-color;
+    }
+    .name{
+      color: $dark-primary-color;
+    }
+  }
+}
