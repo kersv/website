@@ -1,0 +1,130 @@
+$dark-primary-color: #0a0f1e;
+$light-primary-color: #fafcfd;
+$primary-color-scheme: #9f9ae9;
+$secondary-color-scheme: #83868b;
+
+.codenames{
+  height: 100%;
+  width: 100%;
+  // border: 1px solid turquoise;
+  display: flex;
+  flex-direction: column;
+  
+  
+  .codenames-slider{
+    // border: 1px solid rgb(0, 217, 255);
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    .slider{
+      width: 800px;
+      height: 400px;
+      
+      .codenames-image{
+        border-radius: .8em;
+        height: 100%;
+        width: 100%;
+        
+      }
+
+    }
+    
+  }
+
+  .codenames-desc{
+    // border: 1px solid rgb(50, 0, 231);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    p{
+      // border: 1px solid rgb(166, 148, 231);
+      width: 60%;
+      transition: color 1s;
+      margin-bottom: .3em;
+      
+      .project-link{
+        text-decoration: none;
+        margin-right: 1em;
+        transition: color 1s;
+        
+      }
+    }
+    
+  }
+
+}
+
+#dark{
+
+  .codenames-desc{
+    p{
+      color: $light-primary-color;
+      .project-link{
+        color: $light-primary-color;
+        &:hover{
+          color: $primary-color-scheme;
+        }
+      }
+    }
+  }
+}
+#light{
+  
+  .codenames-desc{
+    p{
+      color: $dark-primary-color;
+      .project-link{
+        color: $dark-primary-color;
+        &:hover{
+          color: $primary-color-scheme;
+        }
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 1218px) {
+  .codenames{
+    .codenames-slider{
+      .slider{
+        width: 500px;
+        height: 350px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .codenames{
+    .codenames-slider{
+      .slider{
+        width: 400px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .codenames{
+    .codenames-slider{
+      .slider{
+        width: 250px;
+        height: 150px;
+      }
+    }
+    .codenames-desc{
+      p{
+        width: 100%;
+
+      }
+    }
+  }
+  
+}

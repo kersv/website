@@ -1,0 +1,130 @@
+$dark-primary-color: #0a0f1e;
+$light-primary-color: #fafcfd;
+$primary-color-scheme: #9f9ae9;
+$secondary-color-scheme: #83868b;
+
+.aria{
+  height: 100%;
+  width: 100%;
+  // border: 1px solid turquoise;
+  display: flex;
+  flex-direction: column;
+  
+  
+  .aria-slider{
+    // border: 1px solid rgb(0, 217, 255);
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    .slider{
+      width: 800px;
+      height: 400px;
+      
+      .aria-image{
+        border-radius: .8em;
+        height: 100%;
+        width: 100%;
+        
+      }
+
+    }
+    
+  }
+
+  .aria-desc{
+    // border: 1px solid rgb(50, 0, 231);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    p{
+      // border: 1px solid rgb(166, 148, 231);
+      width: 60%;
+      transition: color 1s;
+      margin-bottom: .3em;
+
+      .project-link{
+        text-decoration: none;
+        margin-right: 1em;
+        transition: color 1s;
+        
+      }
+    }
+    
+  }
+
+}
+
+#dark{
+
+  .aria-desc{
+    p{
+      color: $light-primary-color;
+      .project-link{
+        color: $light-primary-color;
+        &:hover{
+          color: $primary-color-scheme;
+        }
+      }
+    }
+  }
+}
+#light{
+  
+  .aria-desc{
+    p{
+      color: $dark-primary-color;
+      .project-link{
+        color: $dark-primary-color;
+        &:hover{
+          color: $primary-color-scheme;
+        }
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .aria{
+    .aria-slider{
+      .slider{
+        width: 500px;
+        height: 350px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .aria{
+    .aria-slider{
+      .slider{
+        width: 400px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aria{
+    .aria-slider{
+      .slider{
+        width: 250px;
+        height: 150px;
+      }
+    }
+    .aria-desc{
+      p{
+        width: 100%;
+
+      }
+    }
+  }
+  
+}

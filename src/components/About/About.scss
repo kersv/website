@@ -32,6 +32,7 @@ $secondary-color-scheme: #83868b;
     width: 100%;
     // border: 1px solid rgb(229, 255, 0);
     justify-content: center;
+    z-index: 0;
 
     
     .about-me-container{
@@ -39,6 +40,7 @@ $secondary-color-scheme: #83868b;
       height: 100%;
       width: 100%;
       justify-content: center;
+      align-items: flex-start;
       flex: 1;
       
       // border: 1px solid green;
@@ -62,7 +64,7 @@ $secondary-color-scheme: #83868b;
       // border: 1px solid rgb(132, 108, 197);
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       padding: 2em;
       flex: 1;
       
@@ -81,14 +83,21 @@ $secondary-color-scheme: #83868b;
         font-weight: bold;
 
         .icon-img{
-          width: 5em;
-          height: 5em;
+          width: 4.2em;
+          height: 4.2em;
         }
       }
     }
       
       
   }
+
+  @media screen and (max-width: 988px) {
+    .content-container{
+      flex-direction: column;
+    }
+  }
+
   @media screen and (max-width: 700px) {
     .header{
       flex: 0;
@@ -99,15 +108,17 @@ $secondary-color-scheme: #83868b;
 
       .about-me-container{
         flex: 3;
-
+        align-items: center;
+        
         .about-me{
           font-size: 1em;
           max-width: 90%;
         }
       }
-
+      
       .skills-container{
         flex: 1;
+        align-items: center;
         .skills{
           grid-template-columns: 1fr 1fr 1fr;
 
