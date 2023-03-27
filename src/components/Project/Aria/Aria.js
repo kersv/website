@@ -46,7 +46,7 @@ const Aria = () => {
       </div>
       <div className='aria-desc'>
         <p>A virtual platform where users can connect with friends and share YouTube videos while chatting in real-time.</p>
-        <p>Technology: ReactJS, Firebase, Sass, Socket.IO, API </p>
+        <p>Technology: ReactJS, Firebase, Sass, Socket.io, API </p>
         <p>
           <a href='https://github.com/kersv/Aria' target='_blank' rel='noreferrer' className='project-link'>Github</a> 
           <a href='https://www.youtube.com/watch?v=nkq0dWIijSU&ab_channel=michaeltessey' target='_blank' rel='noreferrer' className='project-link'>YouTube</a> 
