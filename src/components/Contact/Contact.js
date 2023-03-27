@@ -12,7 +12,7 @@ const Contact = () => {
           <FaGithub className='icon'/> 
           <div className='icon-desc'>Github</div>
         </a>
-        <a href='https://github.com/kersv' target='_blank' rel='noreferrer' className='contact-icon'>
+        <a href='https://www.linkedin.com/in/kersv-kevin-xie/' target='_blank' rel='noreferrer' className='contact-icon'>
           <FaLinkedinIn className='icon'/> 
           <div className='icon-desc'>LinkedIn</div>
         </a>
