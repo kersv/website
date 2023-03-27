@@ -52,7 +52,7 @@ const Project = () => {
           <span className='name'>CrwnClothing</span>
         </div>
         <div className='project-name' onClick={() => changeProject(2)}>
-          <span className='year'>2023</span> 
+          <span className='year'>2020</span> 
           <span className='name'>Codenames</span>
         </div>
         
