@@ -7,7 +7,7 @@ const Home = () => {
       <div className='intro-desc'>
         <span className='intro'>Hello, I'm</span>
         <span className='name'>Kevin Xie</span>
-        <span className='job'>Web Developer</span>
+        <span className='job'>Frontend Engineer</span>
       </div>
       
     </motion.div>

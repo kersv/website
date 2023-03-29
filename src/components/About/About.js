@@ -54,7 +54,7 @@ const About = () => {
       <div className='content-container'>
         <div className='about-me-container'>
           <motion.p className="about-me" variants={aboutVariants} initial="hidden" animate="visible" >
-            Hi! My name is Kevin and I am a web developer with a passion for creating responsive and functional websites.  I am constantly seeking to expand my knowledge of new technologies and trends in the web development industry. 
+            Hi! My name is Kevin and I am a frontend developer with a passion for creating responsive and functional websites.  I am constantly seeking to expand my knowledge of new technologies and trends in the web development industry. 
           </motion.p>
         </div>
         <div className='skills-container'>
