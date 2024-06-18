@@ -2,7 +2,7 @@ import './Contact.scss'
 import { motion } from 'framer-motion'
 import {FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import {HiOutlineDocumentText} from 'react-icons/hi'
-import Resume from '../Images/Resume.pdf'
+import Resume from '../Images/Resume-XKevin.pdf'
 
 const Contact = () => {
   return (
